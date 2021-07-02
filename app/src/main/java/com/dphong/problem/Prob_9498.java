@@ -1,19 +1,40 @@
 package com.dphong.problem;
 
-public class Prob_9498 {
-    public static void main(String[] args) {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
 
+public class Prob_9498 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String input = br.readLine();
+        System.out.println(solve(Integer.parseInt(input)));
     }
 
-    public String solve(int score) {
-        String result = "A";
+    public static String solve (int score) {
+        return Grade.symbol(score);
+    }
 
-        if (score == 100) {
-            result = "A";
-        } else if (score == 88) {
-            result = "B";
+    private enum Grade {
+        A(90),
+        B(80),
+        C(70),
+        D(60),
+        F(0);
+
+        public int lowLimit;
+
+        Grade(int lowLimit) {
+            this.lowLimit = lowLimit;
         }
 
-        return result;
+        public static String symbol(int score) {
+            return Arrays.stream(Grade.values())
+                    .filter(grade -> score >= grade.lowLimit)
+                    .findFirst()
+                    .get()
+                    .name();
+        }
     }
 }
