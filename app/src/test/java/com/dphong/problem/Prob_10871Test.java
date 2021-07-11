@@ -1,2 +1,4 @@
-package com.dphong.problem;public class Prob_10871 {
+package com.dphong.problem;
+
+public class Prob_10871Test {
 }
