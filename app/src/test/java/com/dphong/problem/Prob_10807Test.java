@@ -24,7 +24,8 @@ public class Prob_10807Test {
     void solve() {
         assertEquals(0, prob.solve(0));
         assertEquals(1, prob.solve(1));
-//        assertEquals(0, prob.solve(0));
-//        assertEquals(0, prob.solve(0));
+        assertEquals(1, prob.solve(2));
+        assertEquals(2, prob.solve(3));
+        assertEquals(3, prob.solve(4));
     }
 }
