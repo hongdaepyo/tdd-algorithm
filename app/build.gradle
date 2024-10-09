@@ -23,9 +23,6 @@ dependencies {
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-params'
-
-    // This dependency is used by the application.
-    implementation 'com.google.guava:guava:29.0-jre'
 }
 
 application {
