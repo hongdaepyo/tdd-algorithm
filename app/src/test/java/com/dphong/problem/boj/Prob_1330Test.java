@@ -1,8 +1,8 @@
-package com.dphong.problem;
-
-import org.junit.jupiter.api.Test;
+package com.dphong.problem.boj;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 /*
     1 2, 10 2, 5 5

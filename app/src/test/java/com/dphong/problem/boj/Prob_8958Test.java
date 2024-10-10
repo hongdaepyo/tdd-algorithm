@@ -1,4 +1,4 @@
-package com.dphong.problem;
+package com.dphong.problem.boj;
 
 import org.junit.jupiter.api.Test;
 

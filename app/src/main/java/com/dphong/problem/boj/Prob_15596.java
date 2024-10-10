@@ -1,4 +1,4 @@
-package com.dphong.problem;
+package com.dphong.problem.boj;
 
 public class Prob_15596 {
     public long sum(int[] a) {

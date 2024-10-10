@@ -1,4 +1,4 @@
-package com.dphong.problem;
+package com.dphong.problem.boj;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
